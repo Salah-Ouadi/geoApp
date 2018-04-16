@@ -48,7 +48,7 @@ export class HomePage {
       );
 
       this.geofence.onTransitionReceived().subscribe(resp => {
-        this.sms.send('5555555555', 'OMG She lied, leave her now!');
+        this.sms.send('+447472171914', 'OMG She lied, leave her now!');
       });
 
       this.navCtrl.push(ActivePage);
