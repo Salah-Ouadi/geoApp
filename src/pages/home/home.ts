@@ -16,7 +16,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private platform: Platform, private geofence : Geofence, private geolocation : Geolocation, private sms : SMS,) {
     this.platform.ready().then(() => {
-  geofence.initialize().then(
+      this.geofence.initialize().then(
     () => console.log('Geofence Plugin Ready'),
     (err) => console.log(err)
   );
@@ -56,6 +56,7 @@ export class HomePage {
 
   }).catch((error) => {
     this.error = error;
+    console.log(error);
   });
 }
 
