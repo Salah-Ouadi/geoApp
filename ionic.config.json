@@ -1,6 +1,6 @@
 {
   "name": "geoApp",
-  "app_id": "",
+  "app_id": "cbccc7d2",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
